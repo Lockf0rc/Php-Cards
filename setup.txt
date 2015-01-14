@@ -1,0 +1,17 @@
+set up
+
+Card interface
+	object property set
+
+view interface
+	rendering html 
+	annimations
+
+theme interface
+	add a handeler css property
+
+
+dbAdapter interface
+	storage slolution
+	sql api:json
+	
