@@ -1,9 +1,9 @@
 <?php
 /*
 Customize A Card.
- MODEL CONTROLLER
+ MVC: CONTROLLER
  */
-
+include('TCard');
 interface ITheme{
 
 

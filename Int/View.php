@@ -1,13 +1,18 @@
 <?
-// MODEL VIEWER
-include('ITemp');
-abstact class View implements ITemp{
+// MODEL:Controller
+include('TCard');
+ class View {
 
-protect public format(CardType $card){
+function __constuct(TCard $C,ITheme $T){
+
 	
 }
+	
 
-protect public display(){}
+/*
+Handel displaying Card
+ */
+abstract public function display(){}
 
 } 
 ?>
