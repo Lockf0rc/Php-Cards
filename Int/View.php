@@ -1,19 +1,25 @@
+
 <?
 // MODEL:Controller
-include('TCard');
- class View {
-private $object;
-function __constuct(TCard $C,ITheme $T){
+
+
+class View {
+public $robject;
+public function __construct( TCard $C, myt $T){
 
 $T->format($C);
-$this->object= $T->RENDER;
+
+$this->display($T);
 }
 	
 
 /*
 Handel displaying Card
  */
-public function display(){}
-echo $this->object;
+	public function display($T)
+	{
+	echo $T->RENDER;
+	}
+
 } 
 ?>

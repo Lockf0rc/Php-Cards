@@ -1,18 +1,22 @@
-<?
-foreach (glob("Int/*.php") as $filename)
-{
-    include $filename;
-}
+
+<?php
+$filename="Int/TCard.php";
+$filename0="Int/ITheme.php";
+$filename1="Int/myt.php";
+$filename2="Int/View.php";
+    include("$filename"); 
+    include("$filename0"); 
+	include("$filename1"); 
+	include("$filename2");
+
+
 
 
 //$t,$d,$n,$c,$da
-$ccard= new TCard(
-"sampleTitle",
-,"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta porro repellat voluptas iure facilis vero minus deserunt sint aspernatur. 
-Labore ullam dolorum temporibus. Expedita delectus iusto totam nostrum temporibus voluptatum?",
-"testing","2015-Jan-16"
-
-	);
+$ccard= new TCard("sampleTitle","Lorem ipsum dolor sit amet, consectetur ","Foostuff","testing","2015-Jan-16");
 $them= new myt();
+// $them->format($ccard);
+// echo $them->RENDER;
 $vcard= new View($ccard,$them);
+//echo $vcard;
 ?>

@@ -2,6 +2,7 @@
 /*
 implement format function 
  */
+
 class myt extends ITheme{
 /*
 public $RENDER;
@@ -11,9 +12,9 @@ protect public $date;
 protect public $title;
 protect public $category;
  */
+public function __construct(){}
 public function format(TCard $c){
 $html=<<<html
-
   <dl class="tabs" data-tab> 
   <dd class="active"><a href="#panel1">$c->category</a></dd>
   
@@ -26,9 +27,8 @@ $html=<<<html
     <hr/>
     <span>$c->date</span>
   </div> 
-
-
 html;
+$this->RENDER=$html;
 $render=$html;
 return $render;
 	}
