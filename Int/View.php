@@ -1,5 +1,7 @@
 <?
-class View implements ITemp{
+// MODEL VIEWER
+include('ITemp');
+abstact class View implements ITemp{
 
 protect public format(CardType $card){
 	
